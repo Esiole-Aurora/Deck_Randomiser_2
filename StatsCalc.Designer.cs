@@ -115,6 +115,7 @@ partial class StatsCalc
         Enter_Button.TabIndex = 7;
         Enter_Button.Text = "CALCULATE";
         Enter_Button.UseVisualStyleBackColor = true;
+        Enter_Button.Click += Enter_Button_Click;
         // 
         // StatsCalc
         // 
