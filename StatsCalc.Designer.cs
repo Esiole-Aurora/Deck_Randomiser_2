@@ -39,6 +39,8 @@ partial class StatsCalc
         Copies = new System.Windows.Forms.TextBox();
         Hand_Size = new System.Windows.Forms.TextBox();
         Enter_Button = new System.Windows.Forms.Button();
+        Copies_Wanted = new System.Windows.Forms.TextBox();
+        label4 = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
         // BackButton
@@ -68,7 +70,7 @@ partial class StatsCalc
         label2.Name = "label2";
         label2.Size = new System.Drawing.Size(188, 23);
         label2.TabIndex = 2;
-        label2.Text = "Number of copies";
+        label2.Text = "Copies in deck";
         // 
         // label3
         // 
@@ -82,11 +84,11 @@ partial class StatsCalc
         // Deck_Size
         // 
         Deck_Size.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
-        Deck_Size.Location = new System.Drawing.Point(213, 33);
+        Deck_Size.Location = new System.Drawing.Point(212, 33);
         Deck_Size.Name = "Deck_Size";
         Deck_Size.Size = new System.Drawing.Size(72, 27);
         Deck_Size.TabIndex = 4;
-        Deck_Size.Text = "100";
+        Deck_Size.Text = "99";
         // 
         // Copies
         // 
@@ -109,7 +111,7 @@ partial class StatsCalc
         // Enter_Button
         // 
         Enter_Button.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
-        Enter_Button.Location = new System.Drawing.Point(30, 123);
+        Enter_Button.Location = new System.Drawing.Point(30, 153);
         Enter_Button.Name = "Enter_Button";
         Enter_Button.Size = new System.Drawing.Size(255, 30);
         Enter_Button.TabIndex = 7;
@@ -117,12 +119,32 @@ partial class StatsCalc
         Enter_Button.UseVisualStyleBackColor = true;
         Enter_Button.Click += Enter_Button_Click;
         // 
+        // Copies_Wanted
+        // 
+        Copies_Wanted.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        Copies_Wanted.Location = new System.Drawing.Point(213, 123);
+        Copies_Wanted.Name = "Copies_Wanted";
+        Copies_Wanted.Size = new System.Drawing.Size(72, 27);
+        Copies_Wanted.TabIndex = 9;
+        Copies_Wanted.Text = "3";
+        // 
+        // label4
+        // 
+        label4.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label4.Location = new System.Drawing.Point(30, 126);
+        label4.Name = "label4";
+        label4.Size = new System.Drawing.Size(188, 23);
+        label4.TabIndex = 8;
+        label4.Text = "Copies wanted";
+        // 
         // StatsCalc
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
         ClientSize = new System.Drawing.Size(520, 453);
+        Controls.Add(Copies_Wanted);
+        Controls.Add(label4);
         Controls.Add(Enter_Button);
         Controls.Add(Hand_Size);
         Controls.Add(Copies);
@@ -135,6 +157,9 @@ partial class StatsCalc
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.TextBox Copies_Wanted;
+    private System.Windows.Forms.Label label4;
 
     private System.Windows.Forms.TextBox Copies;
     private System.Windows.Forms.TextBox Hand_Size;
