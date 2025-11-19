@@ -35,6 +35,7 @@ partial class NumberSelect
         No_Select_Box = new System.Windows.Forms.TextBox();
         label1 = new System.Windows.Forms.Label();
         Select_Button = new System.Windows.Forms.Button();
+        Reroll_Button = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // BackButton
@@ -76,12 +77,24 @@ partial class NumberSelect
         Select_Button.UseVisualStyleBackColor = true;
         Select_Button.Click += button2_Click;
         // 
+        // Reroll_Button
+        // 
+        Reroll_Button.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        Reroll_Button.Location = new System.Drawing.Point(362, 29);
+        Reroll_Button.Name = "Reroll_Button";
+        Reroll_Button.Size = new System.Drawing.Size(90, 27);
+        Reroll_Button.TabIndex = 4;
+        Reroll_Button.Text = "REROLL";
+        Reroll_Button.UseVisualStyleBackColor = true;
+        Reroll_Button.Click += button1_Click;
+        // 
         // NumberSelect
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
         ClientSize = new System.Drawing.Size(520, 453);
+        Controls.Add(Reroll_Button);
         Controls.Add(Select_Button);
         Controls.Add(No_Select_Box);
         Controls.Add(label1);
@@ -90,6 +103,8 @@ partial class NumberSelect
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Button Reroll_Button;
 
     private System.Windows.Forms.Button Select_Button;
 
