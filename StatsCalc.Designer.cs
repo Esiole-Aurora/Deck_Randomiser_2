@@ -153,6 +153,7 @@ partial class StatsCalc
         Controls.Add(label2);
         Controls.Add(label1);
         Controls.Add(BackButton);
+        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         Text = "Stats_Calc";
         ResumeLayout(false);
         PerformLayout();

@@ -40,13 +40,14 @@ partial class NumberSelect
         // 
         // BackButton
         // 
+        BackButton.BackColor = System.Drawing.SystemColors.ButtonFace;
         BackButton.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         BackButton.Location = new System.Drawing.Point(358, 375);
         BackButton.Name = "BackButton";
         BackButton.Size = new System.Drawing.Size(152, 69);
         BackButton.TabIndex = 0;
         BackButton.Text = "BACK";
-        BackButton.UseVisualStyleBackColor = true;
+        BackButton.UseVisualStyleBackColor = false;
         BackButton.Click += BackButton_Click;
         // 
         // No_Select_Box
@@ -99,6 +100,7 @@ partial class NumberSelect
         Controls.Add(No_Select_Box);
         Controls.Add(label1);
         Controls.Add(BackButton);
+        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         Text = "Number_Select";
         ResumeLayout(false);
         PerformLayout();

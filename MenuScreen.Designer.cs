@@ -63,6 +63,7 @@ partial class MenuScreen
         ClientSize = new System.Drawing.Size(520, 453);
         Controls.Add(Stats_Button);
         Controls.Add(Deck_Selector_Button);
+        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         Text = "MTG_ASSISTANT";
         ResumeLayout(false);
     }
