@@ -10,9 +10,7 @@ using Random = System.Random;
 namespace Deck_Randomiser_2;
 
 public partial class NumberSelect : Form
-/*
- * Form containing randomizer for list of decks
- */
+
 {
     private ArrayList Decks = new ArrayList();
     private Dictionary<Label, CheckBox> Labels = new Dictionary<Label, CheckBox>();
