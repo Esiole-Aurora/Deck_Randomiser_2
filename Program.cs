@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace Deck_Randomiser_2;
 
 internal static class Program
