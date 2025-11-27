@@ -7,9 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Edited workspace.xml">
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Removed unneccessary dependencies">
+      <change afterPath="$PROJECT_DIR$/RandomCard.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RandomCard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StatsCalc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StatsCalc.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,13 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +46,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/fredf/RiderProjects/Deck_Randomiser_2-master/NumberSelect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/fredf/RiderProjects/Deck_Randomiser_2-master/NumberSelect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/fredf/RiderProjects/Deck_Randomiser_2-master/StatsCalc.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -47,22 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Deck_Randomiser_2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Deck_Randomiser_2.executor": "Run",
+    "HTTP Request.All in Scryfall_GET.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected=".NET Project.Deck_Randomiser_2">
     <configuration name="Deck_Randomiser_2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -81,6 +92,14 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="All in Scryfall_GET" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Scryfall_GET.http">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.All in Scryfall_GET" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,7 +113,7 @@
       <workItem from="1764166176356" duration="203000" />
       <workItem from="1764166441066" duration="285000" />
       <workItem from="1764248561224" duration="119000" />
-      <workItem from="1764248693592" duration="4684000" />
+      <workItem from="1764248693592" duration="6035000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -152,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764258867568</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added documentation to StatsCalc.cs">
+      <option name="closed" value="true" />
+      <created>1764260500219</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1764260500219</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Removed unneccessary dependencies">
+      <option name="closed" value="true" />
+      <created>1764260547886</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764260547886</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +215,8 @@
     <MESSAGE value="Moved DecksList.csv" />
     <MESSAGE value="Added documentation to NumberSelect.cs and improved code readability" />
     <MESSAGE value="Edited workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited workspace.xml" />
+    <MESSAGE value="Added documentation to StatsCalc.cs" />
+    <MESSAGE value="Removed unneccessary dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unneccessary dependencies" />
   </component>
 </project>

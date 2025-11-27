@@ -1,0 +1,9 @@
+GET https://api.scryfall.com/cards/random
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-11-27T162813.200.json
+
+###
+
