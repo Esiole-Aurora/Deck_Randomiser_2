@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Added documentation to MenuScreen.cs">
-      <change afterPath="$PROJECT_DIR$/DecksList.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NumberSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NumberSelect.cs" afterDir="false" />
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Edited workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatsCalc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StatsCalc.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,10 @@
     &quot;accountId&quot;: &quot;7170a5e0-79b7-4c55-a55b-f4a40b1f7a34&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/fredf/RiderProjects/Deck_Randomiser_2-master/NumberSelect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/fredf/RiderProjects/Deck_Randomiser_2-master/NumberSelect.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -90,7 +94,7 @@
       <workItem from="1764166176356" duration="203000" />
       <workItem from="1764166441066" duration="285000" />
       <workItem from="1764248561224" duration="119000" />
-      <workItem from="1764248693592" duration="2533000" />
+      <workItem from="1764248693592" duration="4684000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -116,7 +120,39 @@
       <option name="project" value="LOCAL" />
       <updated>1764257946328</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added DecksList.csv">
+      <option name="closed" value="true" />
+      <created>1764258221893</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764258221893</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Moved DecksList.csv">
+      <option name="closed" value="true" />
+      <created>1764258286224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764258286224</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added documentation to NumberSelect.cs and improved code readability">
+      <option name="closed" value="true" />
+      <created>1764258855109</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764258855109</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Edited workspace.xml">
+      <option name="closed" value="true" />
+      <created>1764258867568</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764258867568</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +176,10 @@
     <MESSAGE value="Ensure all is committed" />
     <MESSAGE value="update workspace.xml" />
     <MESSAGE value="Added documentation to MenuScreen.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation to MenuScreen.cs" />
+    <MESSAGE value="Added DecksList.csv" />
+    <MESSAGE value="Moved DecksList.csv" />
+    <MESSAGE value="Added documentation to NumberSelect.cs and improved code readability" />
+    <MESSAGE value="Edited workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited workspace.xml" />
   </component>
 </project>
