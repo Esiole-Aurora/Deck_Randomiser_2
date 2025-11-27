@@ -57,12 +57,14 @@ partial class RandomCard
         // 
         // Enter_Button
         // 
-        Enter_Button.Location = new System.Drawing.Point(373, 27);
+        Enter_Button.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        Enter_Button.Location = new System.Drawing.Point(330, 20);
         Enter_Button.Name = "Enter_Button";
-        Enter_Button.Size = new System.Drawing.Size(75, 23);
+        Enter_Button.Size = new System.Drawing.Size(75, 27);
         Enter_Button.TabIndex = 2;
         Enter_Button.Text = "ENTER";
         Enter_Button.UseVisualStyleBackColor = true;
+        Enter_Button.Click += Enter_Button_Click;
         // 
         // RandomCard
         // 
@@ -76,7 +78,6 @@ partial class RandomCard
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         MaximizeBox = false;
         Text = "RandomCard";
-        Load += RandomCard_Load;
         ResumeLayout(false);
         PerformLayout();
     }

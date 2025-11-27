@@ -34,4 +34,5 @@ public partial class RandomCard : Form
     {
         throw new System.NotImplementedException();
     }
+    
 }
