@@ -32,14 +32,8 @@ public partial class RandomCard : Form
     /// <param name="e"></param>
     private void Enter_Button_Click(object sender, EventArgs e)
     {
-        var url = "https://api.scryfall.com/cards/random";
-        if (Scryfall_Criteria.Text != "")
-        {
-            
-        }
-        using var client = new HttpClient();
-        var endPoint = new Uri(url);
-        var json = client.GetStringAsync(endPoint);
+        
+
     }
     
 }

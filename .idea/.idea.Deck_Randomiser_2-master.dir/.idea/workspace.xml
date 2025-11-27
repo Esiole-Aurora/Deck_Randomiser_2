@@ -7,7 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Edited RandomCard.Designer.cs">
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.cs" afterDir="false" />
     </list>
@@ -42,9 +43,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/fredf/RiderProjects/Deck_Randomiser_2-master/NumberSelect.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/fredf/RiderProjects/Deck_Randomiser_2-master/NumberSelect.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/fredf/RiderProjects/Deck_Randomiser_2-master/StatsCalc.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c439425da351c75ac7d966a1cc8324b51a9c471865af79d2f2f3fcb65e392/HttpClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ca93e3e812dafe73326430cff89e9b91b27b9f9a94de3344557d16fdf66f9e0/Button.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -57,8 +57,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.Deck_Randomiser_2.executor": "Run",
+    ".NET Project.Deck_Randomiser_2.executor": "Debug",
     "HTTP Request.All in Scryfall_GET.executor": "Run",
+    "HTTP Request.Scryfall_GET | GET ScryfallRequest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -93,8 +94,12 @@
     <configuration name="All in Scryfall_GET" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/Scryfall_GET.http">
       <method v="2" />
     </configuration>
+    <configuration name="Scryfall_GET | GET ScryfallRequest" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Scryfall_GET.http" executionIdentifier="GET ScryfallRequest" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.Scryfall_GET | GET ScryfallRequest" />
         <item itemvalue="HTTP Request.All in Scryfall_GET" />
       </list>
     </recent_temporary>
@@ -111,7 +116,8 @@
       <workItem from="1764166176356" duration="203000" />
       <workItem from="1764166441066" duration="285000" />
       <workItem from="1764248561224" duration="119000" />
-      <workItem from="1764248693592" duration="6763000" />
+      <workItem from="1764248693592" duration="7035000" />
+      <workItem from="1764262747564" duration="1864000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -201,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764261910689</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added button for RandomCard.cs and began implementing http request">
+      <option name="closed" value="true" />
+      <created>1764262582733</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1764262582733</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +247,7 @@
     <MESSAGE value="Removed unneccessary dependencies" />
     <MESSAGE value="Added RandomCard.cs" />
     <MESSAGE value="Edited RandomCard.Designer.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited RandomCard.Designer.cs" />
+    <MESSAGE value="Added button for RandomCard.cs and began implementing http request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added button for RandomCard.cs and began implementing http request" />
   </component>
 </project>
