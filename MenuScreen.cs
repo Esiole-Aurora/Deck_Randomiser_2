@@ -44,4 +44,10 @@ public partial class MenuScreen : Form
     }
 
 
+    private void Random_Card_Button_Click(object sender, EventArgs e)
+    {
+        var randomCard = new RandomCard();
+        randomCard.Show();
+        this.Hide();
+    }
 }

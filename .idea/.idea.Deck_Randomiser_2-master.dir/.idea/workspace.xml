@@ -7,11 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Removed unneccessary dependencies">
-      <change afterPath="$PROJECT_DIR$/RandomCard.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RandomCard.cs" afterDir="false" />
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Edited RandomCard.Designer.cs">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,7 @@
       <workItem from="1764166176356" duration="203000" />
       <workItem from="1764166441066" duration="285000" />
       <workItem from="1764248561224" duration="119000" />
-      <workItem from="1764248693592" duration="6035000" />
+      <workItem from="1764248693592" duration="6763000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -187,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764260547886</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added RandomCard.cs">
+      <option name="closed" value="true" />
+      <created>1764261774427</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1764261774427</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Edited RandomCard.Designer.cs">
+      <option name="closed" value="true" />
+      <created>1764261910689</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1764261910689</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +231,8 @@
     <MESSAGE value="Edited workspace.xml" />
     <MESSAGE value="Added documentation to StatsCalc.cs" />
     <MESSAGE value="Removed unneccessary dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unneccessary dependencies" />
+    <MESSAGE value="Added RandomCard.cs" />
+    <MESSAGE value="Edited RandomCard.Designer.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited RandomCard.Designer.cs" />
   </component>
 </project>
