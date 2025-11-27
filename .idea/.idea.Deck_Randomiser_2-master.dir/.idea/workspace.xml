@@ -8,8 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NumberSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NumberSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,7 @@
     &quot;accountId&quot;: &quot;7170a5e0-79b7-4c55-a55b-f4a40b1f7a34&quot;
   }
 }</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -87,14 +87,40 @@
       <updated>1764165699952</updated>
       <workItem from="1764165701691" duration="405000" />
       <workItem from="1764166176356" duration="203000" />
+      <workItem from="1764166441066" duration="285000" />
+      <workItem from="1764248561224" duration="119000" />
+      <workItem from="1764248693592" duration="1226000" />
     </task>
+    <task id="LOCAL-00001" summary="Ensure all is committed">
+      <option name="closed" value="true" />
+      <created>1764166710266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764166710266</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Ensure all is committed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ensure all is committed" />
   </component>
 </project>
