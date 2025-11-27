@@ -1,90 +1,98 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Security.Cryptography;
-using System.Windows.Forms;
+﻿using System.Collections;
 using Random = System.Random;
 
 namespace Deck_Randomiser_2;
 
+/// <summary>
+/// Deck Selection Form, allows user to randomly select a number of decks from a csv file
+/// </summary>
 public partial class NumberSelect : Form
 
 {
-    private ArrayList Decks = new ArrayList();
-    private Dictionary<Label, CheckBox> Labels = new Dictionary<Label, CheckBox>();
-    private const int NUMBER_OF_DECKS_OWNED = 18;
+    private ArrayList _decks = new ArrayList();
+    private readonly Dictionary<Label, CheckBox> _labels = new Dictionary<Label, CheckBox>();
+    private const int NumberOfDecksOwned = 18;
+    private const string FilePath = "DecksList.csv";
+    
+    /// <summary>
+    /// Constructor for this class
+    /// </summary>
     public NumberSelect()
     {
         InitializeComponent();
     }
+    /// <summary>
+    /// Instantiates _decks as an ArrayList and reads the csv at FilePath
+    /// </summary>
     private void DecksList_Setup()
     {
-        Decks = new ArrayList();
-        TextReader reader = new StreamReader("DecksList.csv");
+        _decks = new ArrayList();
+        TextReader reader = new StreamReader(FilePath);
         foreach (var line in reader.ReadToEnd().Split('\n'))
         {
-            Decks.Add(line);
+            _decks.Add(line);
         }
     }
 
-
+    /// <summary>
+    /// Deck selection button, deletes all current labels and checkboxes and instantiates a number equal o the contents of the textbox
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void button2_Click(object sender, EventArgs e)
     {
         DecksList_Setup();
         
-        foreach (Label key in Labels.Keys)
+        foreach (var key in _labels.Keys)
         {
-            this.Controls.Remove(key);
-            this.Controls.Remove(Labels[key]);
+            Controls.Remove(key);
+            Controls.Remove(_labels[key]);
         }
-        Labels.Clear();
-        
-        if (validate(No_Select_Box.Text))
-        {
-            var number_of_decks = int.Parse(No_Select_Box.Text);
-            Random rand  = new Random();
+        _labels.Clear();
+
+        if (!Validate(No_Select_Box.Text)) return;
+        var numberOfDecks = int.Parse(No_Select_Box.Text);
+        var rand  = new Random();
             
-            for (var i = 0; i < number_of_decks; i++) {
-                var next_deck = Decks[rand.Next(0, Decks.Count- 1)].ToString();
-                Decks.Remove(next_deck);
-                var label = new Label();
-                label.Text = next_deck;
-                // set font here
-                label.AutoSize = true;
-                var checkBox = new CheckBox();
-                checkBox.AutoSize = true;
-                checkBox.Checked = false;
-                if (i < NUMBER_OF_DECKS_OWNED/2)
-                {
-                    label.Location = new Point(30, (i * 20) + 85);
-                    checkBox.Location = new Point(180, (i * 20) + 85);
-                } else
-                {
-                    label.Location = new Point(200, ((i-9) * 20) + 85);
-                    checkBox.Location = new Point(350, ((i-9) * 20) + 85);
-                }
-                
-                
-                Labels[label] = checkBox;
-                this.Controls.Add(checkBox);
-                this.Controls.Add(label);
-                
+        for (var i = 0; i < numberOfDecks; i++) {
+            var nextDeck = _decks[rand.Next(0, _decks.Count- 1)].ToString();
+            _decks.Remove(nextDeck);
+            var label = new Label();
+            label.Text = nextDeck;
+            // set font here
+            label.AutoSize = true;
+            var checkBox = new CheckBox();
+            checkBox.AutoSize = true;
+            checkBox.Checked = false;
+            if (i < NumberOfDecksOwned/2)
+            {
+                label.Location = new Point(30, (i * 20) + 85);
+                checkBox.Location = new Point(180, (i * 20) + 85);
+            } else
+            {
+                label.Location = new Point(200, ((i-9) * 20) + 85);
+                checkBox.Location = new Point(350, ((i-9) * 20) + 85);
             }
+                
+                
+            _labels[label] = checkBox;
+            this.Controls.Add(checkBox);
+            this.Controls.Add(label);
+                
         }
     }
 
-    private bool validate(string Text_To_Convert)
+    /// <summary>
+    /// Validates data passed as parameter, data must be an integer and less than the number of decks available
+    /// </summary>
+    /// <param name="textToConvert">The string value that is to be parsed as an integer</param>
+    /// <returns>True if the contents of the textbox is an integer and less than the number of decks available</returns>
+    private static bool Validate(string textToConvert)
     {
         try
         {
-            var num = int.Parse(Text_To_Convert);
-            if (num > NUMBER_OF_DECKS_OWNED)
-            {
-                return false;
-            }
-            return true;
+            var num = int.Parse(textToConvert);
+            return num <= NumberOfDecksOwned;
         }
         catch (Exception e)
         {
@@ -92,6 +100,11 @@ public partial class NumberSelect : Form
         }
     }
     
+    /// <summary>
+    /// Event handler for back button, returns to menu screen and closes this form
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void BackButton_Click(object sender, EventArgs e)
     {
         var menuScreen = new MenuScreen();
@@ -99,21 +112,21 @@ public partial class NumberSelect : Form
         this.Close();
     }
 
+    /// <summary>
+    /// Event handler for reroll button, selects a new deck for any label with its checkbox ticked if there is a deck available
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void button1_Click(object sender, EventArgs e)
     {
-        foreach (Label key in Labels.Keys)
+        foreach (var key in _labels.Keys)
         {
-            Random rand = new Random();
-            if (Labels[key].Checked == true)
-            {
-                if (Decks.Count > 0)
-                {
-                    int val = rand.Next(0, Decks.Count - 1);
-                    key.Text = Decks[val]?.ToString();
-                    Decks.RemoveAt(val);
-                }
-
-            }
+            var rand = new Random();
+            if (_labels[key].Checked != true) continue;
+            if (_decks.Count <= 0) continue;
+            var val = rand.Next(0, _decks.Count - 1);
+            key.Text = _decks[val]?.ToString();
+            _decks.RemoveAt(val);
         }
     }
 }
