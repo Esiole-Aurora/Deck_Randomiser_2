@@ -7,11 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Scryfall_Get.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Implemented HTTP GET to scryfall API to RandomCard.cs">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomCard.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,6 +130,7 @@
       <workItem from="1764262747564" duration="2105000" />
       <workItem from="1764281981868" duration="6460000" />
       <workItem from="1764434133109" duration="3600000" />
+      <workItem from="1764448762532" duration="611000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -238,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764264856276</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implemented HTTP GET to scryfall API to RandomCard.cs">
+      <option name="closed" value="true" />
+      <created>1764448810770</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1764448810770</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +278,8 @@
     <MESSAGE value="Edited RandomCard.Designer.cs" />
     <MESSAGE value="Added button for RandomCard.cs and began implementing http request" />
     <MESSAGE value="A spot of suffering over api requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="A spot of suffering over api requests" />
+    <MESSAGE value="Implemented HTTP GET to scryfall API to RandomCard.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented HTTP GET to scryfall API to RandomCard.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
