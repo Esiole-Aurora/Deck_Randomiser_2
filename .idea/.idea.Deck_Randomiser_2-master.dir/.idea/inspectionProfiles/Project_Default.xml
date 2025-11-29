@@ -1,0 +1,17 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="IncorrectHttpHeaderInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="customHeaders">
+        <set>
+          <option value="        Method = &quot;GET&quot;;" />
+          <option value="        KeepAlive = false;" />
+          <option value="        AllowAutoRedirect = true;" />
+          <option value="        Accept = &quot;*/*&quot;;" />
+          <option value="UserAgent = &quot;Deck_Randomiser_2/1.0&quot;;" />
+          <option value="User-Agent = &quot;Deck_Randomiser_2/1.0&quot;;" />
+        </set>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
