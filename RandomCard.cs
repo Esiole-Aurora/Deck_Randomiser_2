@@ -1,5 +1,6 @@
 using System.Net;
 using PictureBox = System.Windows.Forms.PictureBox;
+using Point = System.Drawing.Point;
 
 namespace Deck_Randomiser_2;
 
@@ -37,7 +38,6 @@ public partial class RandomCard : Form
     private void Enter_Button_Click(object sender, EventArgs e)
     {
         cardImage?.Dispose();
-
         this.Controls.Remove(cardImage);
         cardImage = new PictureBox();
         cardImage = Scryfall_Get();
@@ -57,13 +57,12 @@ public partial class RandomCard : Form
             client.Headers.Add(HttpRequestHeader.UserAgent, "Deck_Randomiser_2");
             client.DownloadFile("https://api.scryfall.com/cards/random/?format=image", "cards.png");
         }
-        PictureBox pictureBox = new PictureBox();
         var image = Image.FromFile("cards.png");
+        PictureBox pictureBox = new PictureBox();
         pictureBox.Location = new Point(40, 20);
-        pictureBox.Image = image;
+        pictureBox.Image = image.Clone() as Image;
         pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
         pictureBox.Size = new Size(292, 408);
         return pictureBox;
     }
-
 }
