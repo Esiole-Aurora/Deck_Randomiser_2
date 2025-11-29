@@ -30,7 +30,7 @@ public partial class RandomCard : Form
     }
 
     /// <summary>
-    /// Event handler for enter button, makes a http get request to Scryfall API for a random card
+    /// Event handler for enter button, makes a http get request to Scryfall API for a random card and displays that card in a PictureBox
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -40,22 +40,30 @@ public partial class RandomCard : Form
 
         this.Controls.Remove(cardImage);
         cardImage = new PictureBox();
-        
+        cardImage = Scryfall_Get();
+        this.Controls.Add(cardImage);
+    }
+
+    /// <summary>
+    /// Makes an HTTP GET request to the scryfall api to get a random card and add it to the form in a PictureBox
+    /// </summary>
+    /// <returns>A PictureBox of the card image</returns>
+    private PictureBox Scryfall_Get()
+    {
+
         using (var client = new WebClient())
         {
             client.Headers.Add(HttpRequestHeader.Accept, "image/png");
             client.Headers.Add(HttpRequestHeader.UserAgent, "Deck_Randomiser_2");
             client.DownloadFile("https://api.scryfall.com/cards/random/?format=image", "cards.png");
         }
-
+        PictureBox pictureBox = new PictureBox();
         var image = Image.FromFile("cards.png");
-        cardImage.Location = new Point(40, 20);
-        cardImage.Image = image;
-        cardImage.SizeMode = PictureBoxSizeMode.StretchImage;
-        cardImage.Size = new Size(292, 408);
-        this.Controls.Add(cardImage);
-        
+        pictureBox.Location = new Point(40, 20);
+        pictureBox.Image = image;
+        pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+        pictureBox.Size = new Size(292, 408);
+        return pictureBox;
     }
-
 
 }

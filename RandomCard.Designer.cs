@@ -37,24 +37,26 @@ partial class RandomCard
         // 
         // Back_Button
         // 
+        Back_Button.BackColor = System.Drawing.SystemColors.Control;
         Back_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Back_Button.Location = new System.Drawing.Point(358, 375);
         Back_Button.Name = "Back_Button";
         Back_Button.Size = new System.Drawing.Size(152, 69);
         Back_Button.TabIndex = 0;
         Back_Button.Text = "BACK";
-        Back_Button.UseVisualStyleBackColor = true;
+        Back_Button.UseVisualStyleBackColor = false;
         Back_Button.Click += Back_Button_Click;
         // 
         // Enter_Button
         // 
+        Enter_Button.BackColor = System.Drawing.SystemColors.Control;
         Enter_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Enter_Button.Location = new System.Drawing.Point(358, 300);
         Enter_Button.Name = "Enter_Button";
         Enter_Button.Size = new System.Drawing.Size(152, 69);
         Enter_Button.TabIndex = 2;
         Enter_Button.Text = "GET A CARD";
-        Enter_Button.UseVisualStyleBackColor = true;
+        Enter_Button.UseVisualStyleBackColor = false;
         Enter_Button.Click += Enter_Button_Click;
         // 
         // RandomCard
