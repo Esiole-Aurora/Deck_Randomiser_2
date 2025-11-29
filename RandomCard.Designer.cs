@@ -32,7 +32,6 @@ partial class RandomCard
     private void InitializeComponent()
     {
         Back_Button = new System.Windows.Forms.Button();
-        Scryfall_Criteria = new System.Windows.Forms.TextBox();
         Enter_Button = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
@@ -47,22 +46,14 @@ partial class RandomCard
         Back_Button.UseVisualStyleBackColor = true;
         Back_Button.Click += Back_Button_Click;
         // 
-        // Scryfall_Criteria
-        // 
-        Scryfall_Criteria.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
-        Scryfall_Criteria.Location = new System.Drawing.Point(20, 20);
-        Scryfall_Criteria.Name = "Scryfall_Criteria";
-        Scryfall_Criteria.Size = new System.Drawing.Size(304, 27);
-        Scryfall_Criteria.TabIndex = 1;
-        // 
         // Enter_Button
         // 
-        Enter_Button.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
-        Enter_Button.Location = new System.Drawing.Point(330, 20);
+        Enter_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        Enter_Button.Location = new System.Drawing.Point(358, 300);
         Enter_Button.Name = "Enter_Button";
-        Enter_Button.Size = new System.Drawing.Size(75, 27);
+        Enter_Button.Size = new System.Drawing.Size(152, 69);
         Enter_Button.TabIndex = 2;
-        Enter_Button.Text = "ENTER";
+        Enter_Button.Text = "GET A CARD";
         Enter_Button.UseVisualStyleBackColor = true;
         Enter_Button.Click += Enter_Button_Click;
         // 
@@ -73,18 +64,14 @@ partial class RandomCard
         BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
         ClientSize = new System.Drawing.Size(520, 453);
         Controls.Add(Enter_Button);
-        Controls.Add(Scryfall_Criteria);
         Controls.Add(Back_Button);
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         MaximizeBox = false;
         Text = "RandomCard";
         ResumeLayout(false);
-        PerformLayout();
     }
 
     private System.Windows.Forms.Button Enter_Button;
-
-    private System.Windows.Forms.TextBox Scryfall_Criteria;
 
     private System.Windows.Forms.Button Back_Button;
 

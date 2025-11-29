@@ -8,8 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Scryfall_Get.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomCard.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +45,14 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/42749c103b3fc2825cf88eb4bf46197cf268b57f48ceaa3c6ed1b975ab598/Image.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4f8eec63737b196d65a8feec8f77aac98026443948a079923fe2217a7c187f27/StatusExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6ee666bf82c93be693d325cbed165329e4ff61acb76eec8a7ecc9f4a7fa07c4e/HttpWebRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8bfc57955751d07e3fad13bb97d5f66af412d7a34486ec29ad916547ec8ce6b/Path.Windows.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c439425da351c75ac7d966a1cc8324b51a9c471865af79d2f2f3fcb65e392/HttpClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ca93e3e812dafe73326430cff89e9b91b27b9f9a94de3344557d16fdf66f9e0/Button.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d0165cb640e16fb3b8fe6932c042fc2917cd7f2770ff123cf7b9d11b5bfc6/Task.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fd57398b7dc3a8ce7da2786f2c67289c3d974658a9e90d0c1e84db3d965fbf1/Console.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -55,23 +63,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Deck_Randomiser_2.executor": "Debug",
-    "HTTP Request.All in Scryfall_GET.executor": "Run",
-    "HTTP Request.Scryfall_GET | GET ScryfallRequest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Deck_Randomiser_2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in Scryfall_GET.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Scryfall_GET | GET ScryfallRequest.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Scryfall_Get | GET response1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.Deck_Randomiser_2">
     <configuration name="Deck_Randomiser_2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -97,10 +106,14 @@
     <configuration name="Scryfall_GET | GET ScryfallRequest" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Scryfall_GET.http" executionIdentifier="GET ScryfallRequest" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="Scryfall_Get | GET response1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/Scryfall_Get.http" executionIdentifier="GET response1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.Scryfall_GET | GET ScryfallRequest" />
+        <item itemvalue="HTTP Request.Scryfall_Get | GET response1" />
         <item itemvalue="HTTP Request.All in Scryfall_GET" />
+        <item itemvalue="HTTP Request.Scryfall_GET | GET ScryfallRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +130,9 @@
       <workItem from="1764166441066" duration="285000" />
       <workItem from="1764248561224" duration="119000" />
       <workItem from="1764248693592" duration="7035000" />
-      <workItem from="1764262747564" duration="1864000" />
+      <workItem from="1764262747564" duration="2105000" />
+      <workItem from="1764281981868" duration="6460000" />
+      <workItem from="1764434133109" duration="3600000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -215,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764262582733</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="A spot of suffering over api requests">
+      <option name="closed" value="true" />
+      <created>1764264856276</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1764264856276</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +271,19 @@
     <MESSAGE value="Added RandomCard.cs" />
     <MESSAGE value="Edited RandomCard.Designer.cs" />
     <MESSAGE value="Added button for RandomCard.cs and began implementing http request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added button for RandomCard.cs and began implementing http request" />
+    <MESSAGE value="A spot of suffering over api requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="A spot of suffering over api requests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="System.ArgumentException" isInternal="false" displayValue="ArgumentException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

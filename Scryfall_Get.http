@@ -1,0 +1,4 @@
+### GET response1
+GET https://api.scryfall.com/cards/random/?format=image&type=png
+
+###
