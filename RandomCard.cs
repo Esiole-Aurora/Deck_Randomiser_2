@@ -18,6 +18,8 @@ public partial class RandomCard : Form
         InitializeComponent();
     }
 
+    private Image image;
+
     /// <summary>
     /// Event handler for the back button, loads menu screen and closes this form
     /// </summary>
@@ -50,17 +52,21 @@ public partial class RandomCard : Form
     /// <returns>A PictureBox of the card image</returns>
     private PictureBox Scryfall_Get()
     {
-
+        image?.Dispose();
         using (var client = new WebClient())
         {
             client.Headers.Add(HttpRequestHeader.Accept, "image/png");
             client.Headers.Add(HttpRequestHeader.UserAgent, "Deck_Randomiser_2");
-            client.DownloadFile("https://api.scryfall.com/cards/random/?format=image", "cards.png");
+            string uri = "https://api.scryfall.com/cards/random/?format=image";
+            if (Commander_Box.Checked) {
+                uri = "https://api.scryfall.com/cards/random?q=is%3Acommander&format=image";
+            }
+            client.DownloadFile(uri, "cards.png");
         }
-        var image = Image.FromFile("cards.png");
-        PictureBox pictureBox = new PictureBox();
+        image = Image.FromFile("cards.png");
+        var pictureBox = new PictureBox();
         pictureBox.Location = new Point(40, 20);
-        pictureBox.Image = image.Clone() as Image;
+        pictureBox.Image = image;
         pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
         pictureBox.Size = new Size(292, 408);
         return pictureBox;
