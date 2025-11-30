@@ -50,4 +50,11 @@ public partial class MenuScreen : Form
         randomCard.Show();
         this.Hide();
     }
+
+    private void Modify_Decks_List_Click(object sender, EventArgs e)
+    {
+        var decksListModifier = new DecksListModifier();
+        decksListModifier.Show();
+        this.Hide();
+    }
 }

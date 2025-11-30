@@ -18,6 +18,9 @@
       <Compile Update="RandomCard.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="DecksListModifier.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
