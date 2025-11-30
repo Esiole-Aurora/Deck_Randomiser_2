@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Drawing.Design;
 using Random = System.Random;
 
 namespace Deck_Randomiser_2;
@@ -11,7 +12,7 @@ public partial class NumberSelect : Form
 {
     private ArrayList _decks = new ArrayList();
     private readonly Dictionary<Label, CheckBox> _labels = new Dictionary<Label, CheckBox>();
-    private const int NumberOfDecksOwned = 18;
+    private int _numberOfDecksOwned;
     private const string FilePath = "DecksList.csv";
     
     /// <summary>
@@ -32,6 +33,7 @@ public partial class NumberSelect : Form
         {
             _decks.Add(line);
         }
+        _numberOfDecksOwned = _decks.Count;
     }
 
     /// <summary>
@@ -59,19 +61,19 @@ public partial class NumberSelect : Form
             _decks.Remove(nextDeck);
             var label = new Label();
             label.Text = nextDeck;
-            // set font here
+            label.Font = new Font("Courier New", 10f);
             label.AutoSize = true;
             var checkBox = new CheckBox();
             checkBox.AutoSize = true;
             checkBox.Checked = false;
-            if (i < NumberOfDecksOwned/2)
+            if (i < _numberOfDecksOwned/2)
             {
                 label.Location = new Point(30, (i * 20) + 85);
-                checkBox.Location = new Point(180, (i * 20) + 85);
+                checkBox.Location = new Point(210, (i * 20) + 85);
             } else
             {
-                label.Location = new Point(200, ((i-9) * 20) + 85);
-                checkBox.Location = new Point(350, ((i-9) * 20) + 85);
+                label.Location = new Point(280, ((i-9) * 20) + 85);
+                checkBox.Location = new Point(470, ((i-9) * 20) + 85);
             }
                 
                 
@@ -87,12 +89,12 @@ public partial class NumberSelect : Form
     /// </summary>
     /// <param name="textToConvert">The string value that is to be parsed as an integer</param>
     /// <returns>True if the contents of the textbox is an integer and less than the number of decks available</returns>
-    private static bool Validate(string textToConvert)
+    private bool Validate(string textToConvert)
     {
         try
         {
             var num = int.Parse(textToConvert);
-            return num <= NumberOfDecksOwned;
+            return num <= _numberOfDecksOwned;
         }
         catch (Exception e)
         {
