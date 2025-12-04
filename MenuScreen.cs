@@ -24,7 +24,7 @@ public partial class MenuScreen : Form
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void Deck_Selector_Button_Click_1(object sender, EventArgs e)
+    public void Deck_Selector_Button_Click_1(object sender, EventArgs e)
     {
         var numberSelect = new NumberSelect();
         numberSelect.Show();
@@ -36,7 +36,7 @@ public partial class MenuScreen : Form
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    private void Stats_Button_Click(object sender, EventArgs e)
+    public void Stats_Button_Click(object sender, EventArgs e)
     {
         var statsCalc = new StatsCalc();
         statsCalc.Show();
@@ -58,3 +58,4 @@ public partial class MenuScreen : Form
         this.Hide();
     }
 }
+

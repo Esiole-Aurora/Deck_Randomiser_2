@@ -9,6 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +140,7 @@
       <workItem from="1764534531235" duration="4184000" />
       <workItem from="1764599173603" duration="115000" />
       <workItem from="1764627865462" duration="36000" />
+      <workItem from="1764863048297" duration="1027000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
