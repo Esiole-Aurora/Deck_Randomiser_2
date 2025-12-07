@@ -33,7 +33,7 @@ partial class RandomCard
     {
         Back_Button = new System.Windows.Forms.Button();
         Enter_Button = new System.Windows.Forms.Button();
-        Commander_Box = new System.Windows.Forms.CheckBox();
+        Commander_Button = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // Back_Button
@@ -46,6 +46,7 @@ partial class RandomCard
         Back_Button.TabIndex = 0;
         Back_Button.Text = "BACK";
         Back_Button.UseVisualStyleBackColor = false;
+        Back_Button.Visible = false;
         Back_Button.Click += Back_Button_Click;
         // 
         // Enter_Button
@@ -58,17 +59,21 @@ partial class RandomCard
         Enter_Button.TabIndex = 2;
         Enter_Button.Text = "GET A CARD";
         Enter_Button.UseVisualStyleBackColor = false;
+        Enter_Button.Visible = false;
         Enter_Button.Click += Enter_Button_Click;
         // 
-        // Commander_Box
+        // Commander_Button
         // 
-        Commander_Box.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
-        Commander_Box.Location = new System.Drawing.Point(358, 236);
-        Commander_Box.Name = "Commander_Box";
-        Commander_Box.Size = new System.Drawing.Size(152, 58);
-        Commander_Box.TabIndex = 3;
-        Commander_Box.Text = "Random Commander";
-        Commander_Box.UseVisualStyleBackColor = true;
+        Commander_Button.BackColor = System.Drawing.SystemColors.Control;
+        Commander_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        Commander_Button.Location = new System.Drawing.Point(358, 225);
+        Commander_Button.Name = "Commander_Button";
+        Commander_Button.Size = new System.Drawing.Size(152, 69);
+        Commander_Button.TabIndex = 4;
+        Commander_Button.Text = "GET A COMMANDER";
+        Commander_Button.UseVisualStyleBackColor = false;
+        Commander_Button.Visible = false;
+        Commander_Button.Click += Commander_Button_Click;
         // 
         // RandomCard
         // 
@@ -76,16 +81,16 @@ partial class RandomCard
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
         ClientSize = new System.Drawing.Size(520, 453);
-        Controls.Add(Commander_Box);
+        Controls.Add(Commander_Button);
         Controls.Add(Enter_Button);
         Controls.Add(Back_Button);
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+        Location = new System.Drawing.Point(19, 19);
         MaximizeBox = false;
-        Text = "RandomCard";
         ResumeLayout(false);
     }
 
-    private System.Windows.Forms.CheckBox Commander_Box;
+    private System.Windows.Forms.Button Commander_Button;
 
     private System.Windows.Forms.Button Enter_Button;
 

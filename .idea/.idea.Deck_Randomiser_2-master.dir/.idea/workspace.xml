@@ -9,8 +9,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomCard.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,24 +65,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Deck_Randomiser_2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.All in Scryfall_GET.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Scryfall_GET | GET ScryfallRequest.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Scryfall_Get | GET response1.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Deck_Randomiser_2.executor": "Run",
+    "HTTP Request.All in Scryfall_GET.executor": "Run",
+    "HTTP Request.Scryfall_GET | GET ScryfallRequest.executor": "Run",
+    "HTTP Request.Scryfall_Get | GET response1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.Deck_Randomiser_2">
     <configuration name="Deck_Randomiser_2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -140,7 +144,13 @@
       <workItem from="1764534531235" duration="4184000" />
       <workItem from="1764599173603" duration="115000" />
       <workItem from="1764627865462" duration="36000" />
-      <workItem from="1764863048297" duration="1027000" />
+      <workItem from="1764863048297" duration="1893000" />
+      <workItem from="1765123862547" duration="1770000" />
+      <workItem from="1765126203073" duration="89000" />
+      <workItem from="1765126315577" duration="1560000" />
+      <workItem from="1765142007532" duration="173000" />
+      <workItem from="1765142208954" duration="236000" />
+      <workItem from="1765142464896" duration="1340000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -302,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764538050324</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="random commit">
+      <option name="closed" value="true" />
+      <created>1764864942927</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1764864942927</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +361,8 @@
     <MESSAGE value="Fixed bug where cards.png wasn't freed after use" />
     <MESSAGE value="Added DecksListModifier.cs and added documentation" />
     <MESSAGE value="Changed font of labels in NumberSelect.cs and StatsCalc.cs to be coherent with rest of app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed font of labels in NumberSelect.cs and StatsCalc.cs to be coherent with rest of app" />
+    <MESSAGE value="random commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="random commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
