@@ -84,6 +84,7 @@ partial class RandomCard
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         Location = new System.Drawing.Point(19, 19);
         MaximizeBox = false;
+        Text = "MTG_ASSISTANT";
         ResumeLayout(false);
     }
 

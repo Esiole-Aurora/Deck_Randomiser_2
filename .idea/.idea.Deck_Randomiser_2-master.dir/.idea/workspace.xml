@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Changed get a commander checkbox to its own button" />
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,6 +146,7 @@
       <workItem from="1765142007532" duration="173000" />
       <workItem from="1765142208954" duration="236000" />
       <workItem from="1765142464896" duration="1641000" />
+      <workItem from="1765147804700" duration="216000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -323,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765144117264</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Bug fixes on RandomCard.Designer.cs">
+      <option name="closed" value="true" />
+      <created>1765147944593</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1765147944593</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +375,8 @@
     <MESSAGE value="Changed font of labels in NumberSelect.cs and StatsCalc.cs to be coherent with rest of app" />
     <MESSAGE value="random commit" />
     <MESSAGE value="Changed get a commander checkbox to its own button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed get a commander checkbox to its own button" />
+    <MESSAGE value="Bug fixes on RandomCard.Designer.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes on RandomCard.Designer.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
