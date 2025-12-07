@@ -46,7 +46,6 @@ partial class RandomCard
         Back_Button.TabIndex = 0;
         Back_Button.Text = "BACK";
         Back_Button.UseVisualStyleBackColor = false;
-        Back_Button.Visible = false;
         Back_Button.Click += Back_Button_Click;
         // 
         // Enter_Button
@@ -59,7 +58,6 @@ partial class RandomCard
         Enter_Button.TabIndex = 2;
         Enter_Button.Text = "GET A CARD";
         Enter_Button.UseVisualStyleBackColor = false;
-        Enter_Button.Visible = false;
         Enter_Button.Click += Enter_Button_Click;
         // 
         // Commander_Button
@@ -72,7 +70,6 @@ partial class RandomCard
         Commander_Button.TabIndex = 4;
         Commander_Button.Text = "GET A COMMANDER";
         Commander_Button.UseVisualStyleBackColor = false;
-        Commander_Button.Visible = false;
         Commander_Button.Click += Commander_Button_Click;
         // 
         // RandomCard
