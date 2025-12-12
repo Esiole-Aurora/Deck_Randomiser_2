@@ -7,7 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="" />
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomCard.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +54,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ca93e3e812dafe73326430cff89e9b91b27b9f9a94de3344557d16fdf66f9e0/Button.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d0165cb640e16fb3b8fe6932c042fc2917cd7f2770ff123cf7b9d11b5bfc6/Task.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d6b0a348da189959c7eaf7be7f5b52ab59881ae6e7301778edba2ba2f6d46d3/FileSystem.Windows.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e75a5575ba872c8ea754c015cb363850e6c661f39569712d5b74aaca67263c/String.Manipulation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fd57398b7dc3a8ce7da2786f2c67289c3d974658a9e90d0c1e84db3d965fbf1/Console.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -60,27 +66,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Deck_Randomiser_2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.All in Scryfall_GET.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Scryfall_GET | GET ScryfallRequest.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Scryfall_Get | GET response1.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.maddyhome.idea.vim.ui.VimEmulationConfigurable&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Deck_Randomiser_2.executor": "Run",
+    "HTTP Request.All in Scryfall_GET.executor": "Run",
+    "HTTP Request.Scryfall_GET | GET ScryfallRequest.executor": "Run",
+    "HTTP Request.Scryfall_Get | GET response1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.Deck_Randomiser_2">
     <configuration name="Deck_Randomiser_2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -147,6 +153,9 @@
       <workItem from="1765142208954" duration="236000" />
       <workItem from="1765142464896" duration="1641000" />
       <workItem from="1765147804700" duration="216000" />
+      <workItem from="1765149131549" duration="161000" />
+      <workItem from="1765484567233" duration="1705000" />
+      <workItem from="1765502962079" duration="2009000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -332,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765147944593</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Amended title of RandomCard.Designer.cs">
+      <option name="closed" value="true" />
+      <created>1765149257838</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1765149257838</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +393,8 @@
     <MESSAGE value="random commit" />
     <MESSAGE value="Changed get a commander checkbox to its own button" />
     <MESSAGE value="Bug fixes on RandomCard.Designer.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes on RandomCard.Designer.cs" />
+    <MESSAGE value="Amended title of RandomCard.Designer.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended title of RandomCard.Designer.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

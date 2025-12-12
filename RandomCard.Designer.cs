@@ -34,10 +34,12 @@ partial class RandomCard
         Back_Button = new System.Windows.Forms.Button();
         Enter_Button = new System.Windows.Forms.Button();
         Commander_Button = new System.Windows.Forms.Button();
+        SearchCriteria = new System.Windows.Forms.RichTextBox();
         SuspendLayout();
         // 
         // Back_Button
         // 
+        Back_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
         Back_Button.BackColor = System.Drawing.SystemColors.Control;
         Back_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Back_Button.Location = new System.Drawing.Point(358, 375);
@@ -50,6 +52,7 @@ partial class RandomCard
         // 
         // Enter_Button
         // 
+        Enter_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
         Enter_Button.BackColor = System.Drawing.SystemColors.Control;
         Enter_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Enter_Button.Location = new System.Drawing.Point(358, 300);
@@ -62,6 +65,7 @@ partial class RandomCard
         // 
         // Commander_Button
         // 
+        Commander_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
         Commander_Button.BackColor = System.Drawing.SystemColors.Control;
         Commander_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Commander_Button.Location = new System.Drawing.Point(358, 225);
@@ -72,12 +76,23 @@ partial class RandomCard
         Commander_Button.UseVisualStyleBackColor = false;
         Commander_Button.Click += Commander_Button_Click;
         // 
+        // SearchCriteria
+        // 
+        SearchCriteria.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
+        SearchCriteria.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        SearchCriteria.Location = new System.Drawing.Point(358, 24);
+        SearchCriteria.Name = "SearchCriteria";
+        SearchCriteria.Size = new System.Drawing.Size(151, 195);
+        SearchCriteria.TabIndex = 5;
+        SearchCriteria.Text = "";
+        // 
         // RandomCard
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
         ClientSize = new System.Drawing.Size(520, 453);
+        Controls.Add(SearchCriteria);
         Controls.Add(Commander_Button);
         Controls.Add(Enter_Button);
         Controls.Add(Back_Button);
@@ -87,6 +102,8 @@ partial class RandomCard
         Text = "MTG_ASSISTANT";
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.RichTextBox SearchCriteria;
 
     private System.Windows.Forms.Button Commander_Button;
 
