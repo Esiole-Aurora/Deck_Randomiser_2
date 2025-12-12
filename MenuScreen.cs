@@ -57,5 +57,12 @@ public partial class MenuScreen : Form
         decksListModifier.Show();
         this.Hide();
     }
+
+    private void RulingsButton_Click(object sender, EventArgs e)
+    {
+        var rulingsScreen = new RulingsScreen();
+        rulingsScreen.Show();
+        this.Hide();
+    }
 }
 

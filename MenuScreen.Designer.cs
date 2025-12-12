@@ -33,6 +33,7 @@ partial class MenuScreen
         Stats_Button = new System.Windows.Forms.Button();
         Random_Card_Button = new System.Windows.Forms.Button();
         Modify_Decks_List = new System.Windows.Forms.Button();
+        RulingsButton = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // Deck_Selector_Button
@@ -79,12 +80,24 @@ partial class MenuScreen
         Modify_Decks_List.UseVisualStyleBackColor = true;
         Modify_Decks_List.Click += Modify_Decks_List_Click;
         // 
+        // RulingsButton
+        // 
+        RulingsButton.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        RulingsButton.Location = new System.Drawing.Point(40, 324);
+        RulingsButton.Name = "RulingsButton";
+        RulingsButton.Size = new System.Drawing.Size(203, 107);
+        RulingsButton.TabIndex = 4;
+        RulingsButton.Text = "Rulings";
+        RulingsButton.UseVisualStyleBackColor = true;
+        RulingsButton.Click += RulingsButton_Click;
+        // 
         // MenuScreen
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
         ClientSize = new System.Drawing.Size(520, 453);
+        Controls.Add(RulingsButton);
         Controls.Add(Modify_Decks_List);
         Controls.Add(Random_Card_Button);
         Controls.Add(Stats_Button);
@@ -93,6 +106,8 @@ partial class MenuScreen
         Text = "MTG_ASSISTANT";
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Button RulingsButton;
 
     private System.Windows.Forms.Button Modify_Decks_List;
 
