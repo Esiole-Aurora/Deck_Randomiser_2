@@ -7,10 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RulingsScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RulingsScreen.cs" afterDir="false" />
-    </list>
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Refactored RulingsScreen.cs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +71,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.Deck_Randomiser_2.executor": "Debug",
+    ".NET Project.Deck_Randomiser_2.executor": "Run",
     "HTTP Request.All in Scryfall_GET.executor": "Run",
     "HTTP Request.Scryfall_GET | GET ScryfallRequest.executor": "Run",
     "HTTP Request.Scryfall_Get | GET response1.executor": "Run",
@@ -171,7 +168,7 @@
       <workItem from="1765545445008" duration="1502000" />
       <workItem from="1765546959814" duration="276000" />
       <workItem from="1765547314164" duration="1992000" />
-      <workItem from="1765558063339" duration="375000" />
+      <workItem from="1765558063339" duration="801000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -405,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765557551956</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Refactored RulingsScreen.cs">
+      <option name="closed" value="true" />
+      <created>1765558849223</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1765558849223</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +431,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Moved DecksList.csv" />
     <MESSAGE value="Added documentation to NumberSelect.cs and improved code readability" />
     <MESSAGE value="Edited workspace.xml" />
     <MESSAGE value="Added documentation to StatsCalc.cs" />
@@ -451,7 +455,8 @@
     <MESSAGE value="Added functionality to get rulings from scryfall API in RulingsScreen.cs" />
     <MESSAGE value="UI updates to RulingsScreen.Designer.cs" />
     <MESSAGE value="Added the functionality of adding upper and lower bounds for deck bracket and validated inputs in NumberSelect.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the functionality of adding upper and lower bounds for deck bracket and validated inputs in NumberSelect.cs" />
+    <MESSAGE value="Refactored RulingsScreen.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored RulingsScreen.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
