@@ -53,6 +53,7 @@ partial class RulingsScreen
         CardName.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         CardName.Location = new System.Drawing.Point(15, 15);
         CardName.Name = "CardName";
+        CardName.PlaceholderText = "SET/ID";
         CardName.Size = new System.Drawing.Size(285, 27);
         CardName.TabIndex = 1;
         // 
@@ -87,6 +88,8 @@ partial class RulingsScreen
         Controls.Add(EnterButton);
         Controls.Add(CardName);
         Controls.Add(BackButton);
+        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+        MaximizeBox = false;
         Text = "RulingsScreen";
         ResumeLayout(false);
         PerformLayout();

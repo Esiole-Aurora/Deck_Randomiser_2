@@ -7,12 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RulingsScreen.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RulingsScreen.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RulingsScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RulingsScreen.cs" afterDir="false" />
-    </list>
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Added functionality to get rulings from scryfall API in RulingsScreen.cs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +154,7 @@
       <workItem from="1765149131549" duration="161000" />
       <workItem from="1765484567233" duration="1705000" />
       <workItem from="1765502962079" duration="2476000" />
-      <workItem from="1765538438011" duration="2490000" />
+      <workItem from="1765538438011" duration="2875000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -369,7 +364,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765505434654</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added functionality to get rulings from scryfall API in RulingsScreen.cs">
+      <option name="closed" value="true" />
+      <created>1765541033355</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1765541033355</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +393,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="update workspace.xml" />
     <MESSAGE value="Added documentation to MenuScreen.cs" />
     <MESSAGE value="Added DecksList.csv" />
     <MESSAGE value="Moved DecksList.csv" />
@@ -415,7 +417,8 @@
     <MESSAGE value="Amended title of RandomCard.Designer.cs" />
     <MESSAGE value="Added search criteria functionality to RandomCard.cs" />
     <MESSAGE value="Added RulingsScreen.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added RulingsScreen.cs" />
+    <MESSAGE value="Added functionality to get rulings from scryfall API in RulingsScreen.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to get rulings from scryfall API in RulingsScreen.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -426,19 +429,6 @@
           </properties>
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/RulingsScreen.cs</url>
-          <line>45</line>
-          <properties documentPath="C:\Users\fredf\RiderProjects\Deck_Randomiser_2-master\RulingsScreen.cs" containingFunctionPresentation="Method 'ParseCardRulings'">
-            <startOffsets>
-              <option value="1238" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1284" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
