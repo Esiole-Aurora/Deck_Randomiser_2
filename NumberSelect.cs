@@ -31,7 +31,13 @@ public partial class NumberSelect : Form
         TextReader reader = new StreamReader(FilePath);
         foreach (var line in reader.ReadToEnd().Split('\n'))
         {
-            _decks.Add(line);
+            var deckname = line.Split(',')[0].Trim();
+            var bracket = Convert.ToInt32(line.Split(',')[1].Trim());
+            if (!ValidateBrackets(MinBracket.Text) || !ValidateBrackets(MaxBracket.Text)) {return;}
+            if (bracket >= int.Parse(MinBracket.Text) && bracket <= int.Parse(MaxBracket.Text))
+            {
+                _decks.Add(deckname);
+            }
         }
         _numberOfDecksOwned = _decks.Count;
     }
@@ -52,7 +58,7 @@ public partial class NumberSelect : Form
         }
         _labels.Clear();
 
-        if (!Validate(No_Select_Box.Text)) return;
+        if (!ValidateDecks(No_Select_Box.Text)||!ValidateBrackets(MaxBracket.Text)||!ValidateBrackets(MinBracket.Text)) return;
         var numberOfDecks = int.Parse(No_Select_Box.Text);
         var rand  = new Random();
             
@@ -66,7 +72,7 @@ public partial class NumberSelect : Form
             var checkBox = new CheckBox();
             checkBox.AutoSize = true;
             checkBox.Checked = false;
-            if (i < _numberOfDecksOwned/2)
+            if (i < decimal.Round(_numberOfDecksOwned/2))
             {
                 label.Location = new Point(30, (i * 20) + 85);
                 checkBox.Location = new Point(210, (i * 20) + 85);
@@ -89,18 +95,30 @@ public partial class NumberSelect : Form
     /// </summary>
     /// <param name="textToConvert">The string value that is to be parsed as an integer</param>
     /// <returns>True if the contents of the textbox is an integer and less than the number of decks available</returns>
-    private bool Validate(string textToConvert)
+    private bool ValidateDecks(string textToConvert)
     {
         try
         {
             var num = int.Parse(textToConvert);
-            return num <= _numberOfDecksOwned;
+            return (int.Parse(No_Select_Box.Text) < _numberOfDecksOwned);
         }
         catch (Exception e)
         {
             return false;
         }
     }
+    private bool ValidateBrackets(string textToConvert)
+    {
+        try
+        {
+            var num = int.Parse(textToConvert);
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+    } 
     
     /// <summary>
     /// Event handler for back button, returns to menu screen and closes this form
@@ -131,4 +149,65 @@ public partial class NumberSelect : Form
             _decks.RemoveAt(val);
         }
     }
+
+    private void MinBracket_TextChanged(object sender, EventArgs e)
+    {
+        try
+        {
+            if (MinBracket.Text != "" && MinBracket.Text != " ")
+            {
+                int i = int.Parse(MaxBracket.Text);
+                if (int.Parse(MaxBracket.Text) < int.Parse(MinBracket.Text))
+                {
+                    MinBracket.Text = MaxBracket.Text;
+                }
+                             
+                if (int.Parse(MinBracket.Text) < 1)
+                {
+                    MaxBracket.Text = "1";
+                }
+                             
+                if (int.Parse(MaxBracket.Text) > 5)
+                {
+                    MaxBracket.Text = "5";
+                }
+            }
+        }
+        catch (Exception exception)
+        {
+            MinBracket.Text = "1";
+        }
+
+        
+    }
+
+    private void MaxBracket_TextChanged(object sender, EventArgs e)
+    {
+        try
+        {
+            if (MaxBracket.Text != "" && MaxBracket.Text != " ")
+            {
+                int i = int.Parse(MaxBracket.Text);
+                 if (int.Parse(MaxBracket.Text) < int.Parse(MinBracket.Text))
+                 {
+                     MaxBracket.Text = MinBracket.Text;
+                 }
+                
+                 if (int.Parse(MaxBracket.Text) < 1 && MaxBracket.Text!=" ")
+                 {
+                     MaxBracket.Text = "1";
+                 }
+                
+                 if (int.Parse(MaxBracket.Text) > 5 && MaxBracket.Text!=" ")
+                 {
+                     MaxBracket.Text = "5";
+                 }
+            }
+        }
+        catch (Exception exception)
+        {
+            MaxBracket.Text = "5";
+        }
+    }
+
 }

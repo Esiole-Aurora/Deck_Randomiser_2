@@ -36,6 +36,10 @@ partial class NumberSelect
         label1 = new System.Windows.Forms.Label();
         Select_Button = new System.Windows.Forms.Button();
         Reroll_Button = new System.Windows.Forms.Button();
+        MinBracket = new System.Windows.Forms.TextBox();
+        MaxBracket = new System.Windows.Forms.TextBox();
+        label2 = new System.Windows.Forms.Label();
+        label3 = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
         // BackButton
@@ -89,12 +93,56 @@ partial class NumberSelect
         Reroll_Button.UseVisualStyleBackColor = true;
         Reroll_Button.Click += button1_Click;
         // 
+        // MinBracket
+        // 
+        MinBracket.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        MinBracket.Location = new System.Drawing.Point(470, 299);
+        MinBracket.Name = "MinBracket";
+        MinBracket.Size = new System.Drawing.Size(40, 27);
+        MinBracket.TabIndex = 5;
+        MinBracket.Text = "1";
+        MinBracket.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+        MinBracket.TextChanged += MinBracket_TextChanged;
+        // 
+        // MaxBracket
+        // 
+        MaxBracket.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        MaxBracket.Location = new System.Drawing.Point(470, 342);
+        MaxBracket.Name = "MaxBracket";
+        MaxBracket.Size = new System.Drawing.Size(40, 27);
+        MaxBracket.TabIndex = 6;
+        MaxBracket.Text = "5";
+        MaxBracket.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+        MaxBracket.TextChanged += MaxBracket_TextChanged;
+        // 
+        // label2
+        // 
+        label2.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label2.Location = new System.Drawing.Point(344, 299);
+        label2.Name = "label2";
+        label2.Size = new System.Drawing.Size(130, 27);
+        label2.TabIndex = 7;
+        label2.Text = "MIN BRACKET:";
+        // 
+        // label3
+        // 
+        label3.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label3.Location = new System.Drawing.Point(344, 342);
+        label3.Name = "label3";
+        label3.Size = new System.Drawing.Size(130, 27);
+        label3.TabIndex = 8;
+        label3.Text = "MAX BRACKET:";
+        // 
         // NumberSelect
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
         ClientSize = new System.Drawing.Size(520, 453);
+        Controls.Add(label3);
+        Controls.Add(label2);
+        Controls.Add(MaxBracket);
+        Controls.Add(MinBracket);
         Controls.Add(Reroll_Button);
         Controls.Add(Select_Button);
         Controls.Add(No_Select_Box);
@@ -105,6 +153,12 @@ partial class NumberSelect
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Label label3;
+
+    private System.Windows.Forms.TextBox MinBracket;
+    private System.Windows.Forms.TextBox MaxBracket;
+    private System.Windows.Forms.Label label2;
 
     private System.Windows.Forms.Button Reroll_Button;
 
