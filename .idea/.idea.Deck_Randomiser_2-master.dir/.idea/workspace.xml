@@ -7,12 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="Added search criteria functionality to RandomCard.cs">
-      <change afterPath="$PROJECT_DIR$/RulingsScreen.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RulingsScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Deck_Randomiser_2.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuScreen.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuScreen.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MenuScreen.cs" afterDir="false" />
+    <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Folder.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RulingsScreen.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RulingsScreen.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RulingsScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RulingsScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +44,15 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/16662e4b51ea9bff312f3aa0e99a1a6561ec76b7db33f01ee5fee455246/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/273b8cba8036bc8991ffa9fe819459dfe5d1983c6d30e0b713524480b63c6340/WebClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3f31e7e8aa33de883c2ccfa62a9c81bfc246c36e825b489476f9472032e512/File.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/42749c103b3fc2825cf88eb4bf46197cf268b57f48ceaa3c6ed1b975ab598/Image.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4f8eec63737b196d65a8feec8f77aac98026443948a079923fe2217a7c187f27/StatusExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6ee666bf82c93be693d325cbed165329e4ff61acb76eec8a7ecc9f4a7fa07c4e/HttpWebRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6ef8e7d549f6bfb5b9eafaaa0ff48d8cbfc564f32be26323b5f60e63aef4dd1/SafeFileHandle.Windows.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8bfc57955751d07e3fad13bb97d5f66af412d7a34486ec29ad916547ec8ce6b/Path.Windows.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8f4dd247b676ee55702fc4948a94396fadcb8c207634eb7dd4f3ae10ccb539/JsonNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c439425da351c75ac7d966a1cc8324b51a9c471865af79d2f2f3fcb65e392/HttpClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ca93e3e812dafe73326430cff89e9b91b27b9f9a94de3344557d16fdf66f9e0/Button.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d0165cb640e16fb3b8fe6932c042fc2917cd7f2770ff123cf7b9d11b5bfc6/Task.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,7 +71,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Project.Deck_Randomiser_2.executor": "Run",
+    ".NET Project.Deck_Randomiser_2.executor": "Debug",
     "HTTP Request.All in Scryfall_GET.executor": "Run",
     "HTTP Request.Scryfall_GET | GET ScryfallRequest.executor": "Run",
     "HTTP Request.Scryfall_Get | GET response1.executor": "Run",
@@ -156,7 +158,8 @@
       <workItem from="1765147804700" duration="216000" />
       <workItem from="1765149131549" duration="161000" />
       <workItem from="1765484567233" duration="1705000" />
-      <workItem from="1765502962079" duration="2388000" />
+      <workItem from="1765502962079" duration="2476000" />
+      <workItem from="1765538438011" duration="2490000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -358,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765505084919</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added RulingsScreen.cs">
+      <option name="closed" value="true" />
+      <created>1765505434654</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1765505434654</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +390,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Ensure all is committed" />
     <MESSAGE value="update workspace.xml" />
     <MESSAGE value="Added documentation to MenuScreen.cs" />
     <MESSAGE value="Added DecksList.csv" />
@@ -404,7 +414,8 @@
     <MESSAGE value="Bug fixes on RandomCard.Designer.cs" />
     <MESSAGE value="Amended title of RandomCard.Designer.cs" />
     <MESSAGE value="Added search criteria functionality to RandomCard.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added search criteria functionality to RandomCard.cs" />
+    <MESSAGE value="Added RulingsScreen.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added RulingsScreen.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -415,6 +426,19 @@
           </properties>
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RulingsScreen.cs</url>
+          <line>45</line>
+          <properties documentPath="C:\Users\fredf\RiderProjects\Deck_Randomiser_2-master\RulingsScreen.cs" containingFunctionPresentation="Method 'ParseCardRulings'">
+            <startOffsets>
+              <option value="1238" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1284" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
