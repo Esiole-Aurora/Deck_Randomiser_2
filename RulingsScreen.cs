@@ -17,11 +17,11 @@ public partial class RulingsScreen : Form
         this.Close();
     }
     
-    private void Scryfall_Get()
+    private void Scryfall_GetRuling()
     {
         using (var client = new WebClient())
         {
-            client.Headers.Add(HttpRequestHeader.Accept, "image/png");
+            client.Headers.Add(HttpRequestHeader.Accept, "*/*");
             client.Headers.Add(HttpRequestHeader.UserAgent, "Deck_Randomiser_2");
             string uri = "https://api.scryfall.com/cards/";
             uri += CardName.Text;
@@ -43,6 +43,7 @@ public partial class RulingsScreen : Form
         if (File.Exists("cardrulings.json")) {
             string jsonString = File.ReadAllText("cardrulings.json");
             JsonNode obj = JsonObject.Parse(jsonString);
+            
             for (int i = 0; i<obj[2].AsArray().Count; i++) {
                 string ruling = obj[2][i][4].ToString();
                 allRulings += ruling + "\n\n";
@@ -55,11 +56,11 @@ public partial class RulingsScreen : Form
         }
 
     }
-
+    
     private void EnterButton_Click(object sender, EventArgs e)
     {
         Rulings.Text = "";
-        Scryfall_Get();
+        Scryfall_GetRuling();
         ParseCardRulings();
     }
 }

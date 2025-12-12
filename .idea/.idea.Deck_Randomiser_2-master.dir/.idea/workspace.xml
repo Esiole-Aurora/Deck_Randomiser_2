@@ -9,8 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NumberSelect.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NumberSelect.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NumberSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NumberSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RulingsScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RulingsScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,32 +72,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Deck_Randomiser_2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.All in Scryfall_GET.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Scryfall_GET | GET ScryfallRequest.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.Scryfall_Get | GET response1.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Deck_Randomiser_2.executor": "Debug",
+    "HTTP Request.All in Scryfall_GET.executor": "Run",
+    "HTTP Request.Scryfall_GET | GET ScryfallRequest.executor": "Run",
+    "HTTP Request.Scryfall_Get | GET response1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.Deck_Randomiser_2">
     <configuration name="Deck_Randomiser_2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -171,7 +170,8 @@
       <workItem from="1765538438011" duration="4175000" />
       <workItem from="1765545445008" duration="1502000" />
       <workItem from="1765546959814" duration="276000" />
-      <workItem from="1765547314164" duration="1846000" />
+      <workItem from="1765547314164" duration="1992000" />
+      <workItem from="1765558063339" duration="375000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -397,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765541433361</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Added the functionality of adding upper and lower bounds for deck bracket and validated inputs in NumberSelect.cs">
+      <option name="closed" value="true" />
+      <created>1765557551956</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1765557551956</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +426,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added DecksList.csv" />
     <MESSAGE value="Moved DecksList.csv" />
     <MESSAGE value="Added documentation to NumberSelect.cs and improved code readability" />
     <MESSAGE value="Edited workspace.xml" />
@@ -443,7 +450,8 @@
     <MESSAGE value="Added RulingsScreen.cs" />
     <MESSAGE value="Added functionality to get rulings from scryfall API in RulingsScreen.cs" />
     <MESSAGE value="UI updates to RulingsScreen.Designer.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI updates to RulingsScreen.Designer.cs" />
+    <MESSAGE value="Added the functionality of adding upper and lower bounds for deck bracket and validated inputs in NumberSelect.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the functionality of adding upper and lower bounds for deck bracket and validated inputs in NumberSelect.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -454,6 +462,19 @@
           </properties>
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RulingsScreen.cs</url>
+          <line>44</line>
+          <properties documentPath="C:\Users\fredf\RiderProjects\Deck_Randomiser_2-master\RulingsScreen.cs" containingFunctionPresentation="Method 'ParseCardRulings'">
+            <startOffsets>
+              <option value="1181" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1225" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
