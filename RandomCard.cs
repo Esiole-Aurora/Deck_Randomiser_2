@@ -56,7 +56,7 @@ public partial class RandomCard : Form
         image?.Dispose();
         using (var client = new WebClient())
         {
-            client.Headers.Add(HttpRequestHeader.Accept, "image/png");
+            client.Headers.Add(HttpRequestHeader.Accept, "image/jpg");
             client.Headers.Add(HttpRequestHeader.UserAgent, "Deck_Randomiser_2");
             string uri = "https://api.scryfall.com/cards/random/?";
             if (isCommander || SearchCriteria.Text != "")
@@ -79,7 +79,7 @@ public partial class RandomCard : Form
             uri += "&format=image";
             try
             {
-                client.DownloadFile(uri, "cards.png");
+                client.DownloadFile(uri, "cards.jpg");
             }
             catch (Exception e)
             {
@@ -88,7 +88,7 @@ public partial class RandomCard : Form
             }
             
         }
-        image = Image.FromFile("cards.png");
+        image = Image.FromFile("cards.jpg");
         var pictureBox = new PictureBox();
         pictureBox.Location = new Point(40, 20);
         pictureBox.Image = image;
