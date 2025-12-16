@@ -9,8 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a8d8d39f-d306-4724-848e-3d0b1621a03e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deck_Randomiser_2-master.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RandomCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RulingsScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RulingsScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,32 +71,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Deck_Randomiser_2.executor": "Run",
-    "HTTP Request.All in Scryfall_GET.executor": "Run",
-    "HTTP Request.Scryfall_GET | GET ScryfallRequest.executor": "Run",
-    "HTTP Request.Scryfall_Get | GET response1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Deck_Randomiser_2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in Scryfall_GET.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Scryfall_GET | GET ScryfallRequest.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.Scryfall_Get | GET response1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.maddyhome.idea.vim.ui.VimEmulationConfigurable&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.Deck_Randomiser_2">
     <configuration name="Deck_Randomiser_2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -173,7 +171,7 @@
       <workItem from="1765546959814" duration="276000" />
       <workItem from="1765547314164" duration="1992000" />
       <workItem from="1765558063339" duration="879000" />
-      <workItem from="1765724261893" duration="6409000" />
+      <workItem from="1765724261893" duration="7615000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -423,7 +421,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765558938934</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Fixed issues with RulingsScreen.cs displaying card images">
+      <option name="closed" value="true" />
+      <created>1765846888402</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1765846888402</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Refactored and documented RulingsScreen.cs">
+      <option name="closed" value="true" />
+      <created>1765847500301</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1765847500301</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,8 +458,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Edited workspace.xml" />
-    <MESSAGE value="Added documentation to StatsCalc.cs" />
     <MESSAGE value="Removed unneccessary dependencies" />
     <MESSAGE value="Added RandomCard.cs" />
     <MESSAGE value="Edited RandomCard.Designer.cs" />
@@ -469,7 +481,9 @@
     <MESSAGE value="Added the functionality of adding upper and lower bounds for deck bracket and validated inputs in NumberSelect.cs" />
     <MESSAGE value="Refactored RulingsScreen.cs" />
     <MESSAGE value="Updated workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated workspace.xml" />
+    <MESSAGE value="Fixed issues with RulingsScreen.cs displaying card images" />
+    <MESSAGE value="Refactored and documented RulingsScreen.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored and documented RulingsScreen.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

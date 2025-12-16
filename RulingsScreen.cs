@@ -96,8 +96,7 @@ public partial class RulingsScreen : Form
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                throw;
+                return new PictureBox();
             }
         }
         _image = Image.FromFile("cards2.jpg");
