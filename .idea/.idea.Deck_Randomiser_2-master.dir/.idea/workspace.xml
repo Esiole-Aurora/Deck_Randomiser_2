@@ -172,6 +172,8 @@
       <workItem from="1765547314164" duration="1992000" />
       <workItem from="1765558063339" duration="879000" />
       <workItem from="1765724261893" duration="7615000" />
+      <workItem from="1765851959474" duration="187000" />
+      <workItem from="1765995563194" duration="61000" />
     </task>
     <task id="LOCAL-00001" summary="Ensure all is committed">
       <option name="closed" value="true" />
@@ -437,7 +439,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765847500301</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Amended error handling in RulingsScreen.cs">
+      <option name="closed" value="true" />
+      <created>1765852133102</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1765852133102</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +468,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Removed unneccessary dependencies" />
     <MESSAGE value="Added RandomCard.cs" />
     <MESSAGE value="Edited RandomCard.Designer.cs" />
     <MESSAGE value="Added button for RandomCard.cs and began implementing http request" />
@@ -483,7 +492,8 @@
     <MESSAGE value="Updated workspace.xml" />
     <MESSAGE value="Fixed issues with RulingsScreen.cs displaying card images" />
     <MESSAGE value="Refactored and documented RulingsScreen.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored and documented RulingsScreen.cs" />
+    <MESSAGE value="Amended error handling in RulingsScreen.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended error handling in RulingsScreen.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
