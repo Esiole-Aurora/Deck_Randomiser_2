@@ -39,13 +39,16 @@ partial class RulingsScreen
         // 
         // BackButton
         // 
+        BackButton.BackColor = System.Drawing.Color.Coral;
+        BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
+        BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         BackButton.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         BackButton.Location = new System.Drawing.Point(358, 375);
         BackButton.Name = "BackButton";
         BackButton.Size = new System.Drawing.Size(152, 69);
         BackButton.TabIndex = 0;
         BackButton.Text = "BACK";
-        BackButton.UseVisualStyleBackColor = true;
+        BackButton.UseVisualStyleBackColor = false;
         BackButton.Click += BackButton_Click;
         // 
         // CardName
@@ -59,17 +62,21 @@ partial class RulingsScreen
         // 
         // EnterButton
         // 
+        EnterButton.BackColor = System.Drawing.Color.Coral;
+        EnterButton.Cursor = System.Windows.Forms.Cursors.Hand;
+        EnterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         EnterButton.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         EnterButton.Location = new System.Drawing.Point(324, 15);
         EnterButton.Name = "EnterButton";
         EnterButton.Size = new System.Drawing.Size(146, 27);
         EnterButton.TabIndex = 2;
         EnterButton.Text = "ENTER";
-        EnterButton.UseVisualStyleBackColor = true;
+        EnterButton.UseVisualStyleBackColor = false;
         EnterButton.Click += EnterButton_Click;
         // 
         // Rulings
         // 
+        Rulings.BackColor = System.Drawing.SystemColors.Window;
         Rulings.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Rulings.Location = new System.Drawing.Point(15, 48);
         Rulings.Name = "Rulings";
@@ -82,7 +89,7 @@ partial class RulingsScreen
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
+        BackColor = System.Drawing.Color.FromArgb(((int)((byte)6)), ((int)((byte)0)), ((int)((byte)91)));
         ClientSize = new System.Drawing.Size(520, 453);
         Controls.Add(Rulings);
         Controls.Add(EnterButton);

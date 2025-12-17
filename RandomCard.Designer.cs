@@ -40,7 +40,9 @@ partial class RandomCard
         // Back_Button
         // 
         Back_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
-        Back_Button.BackColor = System.Drawing.SystemColors.Control;
+        Back_Button.BackColor = System.Drawing.Color.Coral;
+        Back_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+        Back_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         Back_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Back_Button.Location = new System.Drawing.Point(358, 375);
         Back_Button.Name = "Back_Button";
@@ -53,7 +55,9 @@ partial class RandomCard
         // Enter_Button
         // 
         Enter_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
-        Enter_Button.BackColor = System.Drawing.SystemColors.Control;
+        Enter_Button.BackColor = System.Drawing.Color.Coral;
+        Enter_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+        Enter_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         Enter_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Enter_Button.Location = new System.Drawing.Point(358, 300);
         Enter_Button.Name = "Enter_Button";
@@ -66,7 +70,9 @@ partial class RandomCard
         // Commander_Button
         // 
         Commander_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right));
-        Commander_Button.BackColor = System.Drawing.SystemColors.Control;
+        Commander_Button.BackColor = System.Drawing.Color.Coral;
+        Commander_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+        Commander_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         Commander_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Commander_Button.Location = new System.Drawing.Point(358, 225);
         Commander_Button.Name = "Commander_Button";
@@ -90,7 +96,7 @@ partial class RandomCard
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
+        BackColor = System.Drawing.Color.FromArgb(((int)((byte)6)), ((int)((byte)0)), ((int)((byte)91)));
         ClientSize = new System.Drawing.Size(520, 453);
         Controls.Add(SearchCriteria);
         Controls.Add(Commander_Button);

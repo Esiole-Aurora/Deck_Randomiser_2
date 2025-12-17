@@ -38,17 +38,22 @@ partial class DecksListModifier
         // 
         // button1
         // 
+        button1.BackColor = System.Drawing.Color.Coral;
+        button1.Cursor = System.Windows.Forms.Cursors.Hand;
+        button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+        button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         button1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         button1.Location = new System.Drawing.Point(358, 375);
         button1.Name = "button1";
         button1.Size = new System.Drawing.Size(152, 69);
         button1.TabIndex = 0;
         button1.Text = "BACK";
-        button1.UseVisualStyleBackColor = true;
+        button1.UseVisualStyleBackColor = false;
         button1.Click += button1_Click;
         // 
         // Deck_Names_Box
         // 
+        Deck_Names_Box.BackColor = System.Drawing.SystemColors.Window;
         Deck_Names_Box.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Deck_Names_Box.Location = new System.Drawing.Point(15, 15);
         Deck_Names_Box.Name = "Deck_Names_Box";
@@ -58,27 +63,32 @@ partial class DecksListModifier
         // 
         // Update_Button
         // 
+        Update_Button.BackColor = System.Drawing.Color.Coral;
+        Update_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+        Update_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         Update_Button.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         Update_Button.Location = new System.Drawing.Point(358, 300);
         Update_Button.Name = "Update_Button";
         Update_Button.Size = new System.Drawing.Size(152, 69);
         Update_Button.TabIndex = 2;
         Update_Button.Text = "UPDATE";
-        Update_Button.UseVisualStyleBackColor = true;
+        Update_Button.UseVisualStyleBackColor = false;
         Update_Button.Click += Update_Button_Click;
         // 
         // DecksListModifier
         // 
+        AcceptButton = Update_Button;
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
+        BackColor = System.Drawing.Color.FromArgb(((int)((byte)6)), ((int)((byte)0)), ((int)((byte)91)));
+        CancelButton = button1;
         ClientSize = new System.Drawing.Size(520, 453);
         Controls.Add(Update_Button);
         Controls.Add(Deck_Names_Box);
         Controls.Add(button1);
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         MaximizeBox = false;
-        Text = "DecksListModifier";
+        Text = "MTG_ASSISTANT";
         Load += DecksListModifier_Load;
         ResumeLayout(false);
     }

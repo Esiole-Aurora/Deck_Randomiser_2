@@ -68,6 +68,7 @@ public partial class NumberSelect : Form
             var label = new Label();
             label.Text = nextDeck;
             label.Font = new Font("Courier New", 10f);
+            label.ForeColor = SystemColors.ControlLightLight;
             label.AutoSize = true;
             var checkBox = new CheckBox();
             checkBox.AutoSize = true;
@@ -210,4 +211,10 @@ public partial class NumberSelect : Form
         }
     }
 
+    private void DecksListButton_Click(object sender, EventArgs e)
+    {
+        var d = new DecksListModifier();
+        d.Show();
+        this.Close();
+    }
 }

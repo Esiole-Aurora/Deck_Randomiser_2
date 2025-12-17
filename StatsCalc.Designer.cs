@@ -45,18 +45,23 @@ partial class StatsCalc
         // 
         // BackButton
         // 
+        BackButton.BackColor = System.Drawing.Color.Coral;
+        BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
+        BackButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+        BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         BackButton.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         BackButton.Location = new System.Drawing.Point(358, 375);
         BackButton.Name = "BackButton";
         BackButton.Size = new System.Drawing.Size(152, 69);
         BackButton.TabIndex = 0;
         BackButton.Text = "BACK";
-        BackButton.UseVisualStyleBackColor = true;
+        BackButton.UseVisualStyleBackColor = false;
         BackButton.Click += BackButton_Click;
         // 
         // label1
         // 
         label1.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
         label1.Location = new System.Drawing.Point(30, 33);
         label1.Name = "label1";
         label1.Size = new System.Drawing.Size(188, 23);
@@ -66,6 +71,7 @@ partial class StatsCalc
         // label2
         // 
         label2.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
         label2.Location = new System.Drawing.Point(30, 63);
         label2.Name = "label2";
         label2.Size = new System.Drawing.Size(188, 23);
@@ -75,6 +81,7 @@ partial class StatsCalc
         // label3
         // 
         label3.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
         label3.Location = new System.Drawing.Point(30, 93);
         label3.Name = "label3";
         label3.Size = new System.Drawing.Size(188, 23);
@@ -110,13 +117,18 @@ partial class StatsCalc
         // 
         // Enter_Button
         // 
+        Enter_Button.BackColor = System.Drawing.Color.Coral;
+        Enter_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+        Enter_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+        Enter_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
         Enter_Button.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        Enter_Button.ForeColor = System.Drawing.Color.Black;
         Enter_Button.Location = new System.Drawing.Point(30, 153);
         Enter_Button.Name = "Enter_Button";
         Enter_Button.Size = new System.Drawing.Size(255, 30);
         Enter_Button.TabIndex = 7;
         Enter_Button.Text = "CALCULATE";
-        Enter_Button.UseVisualStyleBackColor = true;
+        Enter_Button.UseVisualStyleBackColor = false;
         Enter_Button.Click += Enter_Button_Click;
         // 
         // Copies_Wanted
@@ -131,6 +143,7 @@ partial class StatsCalc
         // label4
         // 
         label4.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
         label4.Location = new System.Drawing.Point(30, 126);
         label4.Name = "label4";
         label4.Size = new System.Drawing.Size(188, 23);
@@ -139,9 +152,11 @@ partial class StatsCalc
         // 
         // StatsCalc
         // 
+        AcceptButton = Enter_Button;
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        BackColor = System.Drawing.Color.FromArgb(((int)((byte)192)), ((int)((byte)192)), ((int)((byte)255)));
+        BackColor = System.Drawing.Color.FromArgb(((int)((byte)6)), ((int)((byte)0)), ((int)((byte)91)));
+        CancelButton = BackButton;
         ClientSize = new System.Drawing.Size(520, 453);
         Controls.Add(Copies_Wanted);
         Controls.Add(label4);
@@ -154,7 +169,8 @@ partial class StatsCalc
         Controls.Add(label1);
         Controls.Add(BackButton);
         FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-        Text = "Stats_Calc";
+        MinimizeBox = false;
+        Text = "MTG_ASSISTANT";
         ResumeLayout(false);
         PerformLayout();
     }

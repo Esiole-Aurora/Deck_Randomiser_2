@@ -56,6 +56,7 @@ public partial class StatsCalc : Form
                          (GreaterThanEqualTo(i,int.Parse(Deck_Size.Text), 
                 int.Parse(Copies.Text), int.Parse(Copies_Wanted.Text)).ToString("0.##"));
             label.Font = new Font("Courier New", 10f);
+            label.ForeColor = SystemColors.ControlLightLight;
             label.AutoSize = true;
             label.Location = new Point(30, ((i - int.Parse(Hand_Size.Text)) * 20) + 200);
             _labels.Add(label);
